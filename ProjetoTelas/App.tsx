@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.background}>
       <View style={styles.containerPerfil}> 
-        <Image style= {styles.containerPerfil}
+        <Image style= {styles.foto}
         source={require('./assets/fotoPerfil.jpg')}
         />
       </View>
@@ -14,20 +14,20 @@ export default function App() {
       <View style={styles.container}>
         <TextInput
           style= {styles.input}
-          placeholder='Email:'
+          placeholder='EMAIL:'
           autoCorrect={false}
           onChangeText={()=> {}}
           />
 
           <TextInput
           style= {styles.input}
-          placeholder="Senha:"
+          placeholder="SENHA:"
           autoCorrect={false}
           onChangeText={()=> {}}
           />
 
           <TouchableOpacity style={styles.btnEnviar}>
-            <Text>Entrar</Text>
+            <Text>ENTRAR</Text>
           </TouchableOpacity>
 
       </View>
@@ -41,14 +41,28 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'skyblue'
+    backgroundColor: '#FFFAFA'
   },
   containerPerfil:{
-    flex:1,
+    flex:1.2,
     width:500, 
     height:106, 
     alignContent: 'center',
+    backgroundColor: '#EE82EE',
+    justifyContent: 'space-between',
 
+
+  },
+  foto: {
+    flex: 1,
+    width:'300px', 
+    height:'100px', 
+    // alignContent: 'center',
+    marginLeft: '100px',
+    margin: 10,
+    borderRadius: 6,
+    
+    
   },
   container:{
     flex: 1,
@@ -58,21 +72,23 @@ const styles = StyleSheet.create({
     paddingBottom: 50
   },
   input:{
-    backgroundColor: '#FFF',
+    backgroundColor: '#DDA0DD',
     width: "90%",
     marginBottom: 15,
-    color: '#black',
+    color: 'black',
     fontSize: 17,
     borderRadius: 7,
     padding: 10,
   },
   btnEnviar:{
-    backgroundColor: '#35AAFF',
+    backgroundColor: '#BA55D3',
     width: '90%',
     height: 45,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 7
+    borderRadius: 7,
+    border: 'solid',
+    
   },
   submitText:{
     color:'#FFF',
