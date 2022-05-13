@@ -82,12 +82,13 @@ const styles = StyleSheet.create({
   },
   btnEnviar:{
     backgroundColor: '#BA55D3',
-    width: '90%',
+    width: '60%',
     height: 45,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 7,
     border: 'solid',
+    marginTop: 30,
     
   },
   submitText:{
